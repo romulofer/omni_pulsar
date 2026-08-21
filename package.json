@@ -1,7 +1,7 @@
 {
   "name": "omni-pulsar-syntax",
   "theme": "syntax",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Omni syntax theme (Rocketseat), ported to Pulsar",
   "keywords": [
     "dark",
