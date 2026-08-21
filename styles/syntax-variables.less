@@ -1,0 +1,84 @@
+@import "colors.less";
+
+// Official Syntax Variables -----------------------------------
+
+// General colors
+@syntax-text-color:            @FG;
+@syntax-cursor-color:          @syntax-accent;
+@syntax-selection-color:       @SELECTION;
+@syntax-selection-flash-color: @syntax-accent;
+@syntax-background-color:      @BG;
+
+// Guide colors
+@syntax-wrap-guide-color:          fade(#FFFFFF, 10%);
+@syntax-indent-guide-color:        fade(#FFFFFF, 10%);
+@syntax-invisible-character-color: fade(#FFFFFF, 10%);
+
+// For find and replace markers
+@syntax-result-marker-color:          fade(@ORANGE, 80%);
+@syntax-result-marker-color-selected: @ORANGE;
+
+// Gutter colors
+@syntax-gutter-text-color:                @COMMENT;
+@syntax-gutter-text-color-selected:       @FG;
+@syntax-gutter-background-color:          @BG; // unused
+@syntax-gutter-background-color-selected: @BGLight;
+
+// Git colors - For git diff info. i.e. in the gutter
+@syntax-color-renamed:  @CYAN;
+@syntax-color-added:    @GREEN;
+@syntax-color-modified: @ORANGE;
+@syntax-color-removed:  @RED;
+
+// For language entity colors
+@syntax-color-variable:   @PINK;
+@syntax-color-constant:   @PURPLE;
+@syntax-color-property:   @FG;
+@syntax-color-value:      @FG;
+@syntax-color-function:   @GREEN;
+@syntax-color-method:     @GREEN;
+@syntax-color-class:      @CYAN;
+@syntax-color-keyword:    @PINK;
+@syntax-color-tag:        @PINK;
+@syntax-color-attribute:  @GREEN;
+@syntax-color-import:     @PINK;
+@syntax-color-snippet:    @GREEN;
+
+// Terminal Variables ----------------------------------------
+
+@terminal-text-color: @syntax-text-color;
+@terminal-background-color: @syntax-background-color;
+@terminal-selection-background-color: fade(@COMMENT, 45%);
+@terminal-selection-text-color: @syntax-text-color;
+@terminal-cursor-color: @syntax-cursor-color;
+
+@terminal-result-marker-color: @syntax-result-marker-color;
+@terminal-result-marker-color-selected: @syntax-result-marker-color-selected;
+
+@terminal-color-black:   #201B2D;
+@terminal-color-red:     @PINK;
+@terminal-color-green:   @GREEN;
+@terminal-color-yellow:  @YELLOW;
+@terminal-color-blue:    @PURPLE;
+@terminal-color-magenta: @CYAN;
+@terminal-color-cyan:    #A1EFE4;
+@terminal-color-white:   @FG;
+
+@terminal-color-bright-black:   #626483;
+@terminal-color-bright-red:     #ed4556;
+@terminal-color-bright-green:   #00F769;
+@terminal-color-bright-yellow:  @YELLOW;
+@terminal-color-bright-blue:    @PURPLE;
+@terminal-color-bright-magenta: @CYAN;
+@terminal-color-bright-cyan:    #A4FFFF;
+@terminal-color-bright-white:   #F7F7FB;
+
+// Custom Syntax Variables -----------------------------------
+// Don't use in packages
+
+@syntax-cursor-line: @BGLight;
+
+@syntax-deprecated-fg: darken(@syntax-color-modified, 50%);
+@syntax-deprecated-bg: @syntax-color-modified;
+@syntax-illegal-fg:    white;
+@syntax-illegal-bg:    @syntax-color-removed;

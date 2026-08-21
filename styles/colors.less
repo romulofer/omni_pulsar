@@ -1,0 +1,42 @@
+// Omni palette (Rocketseat) -----------------------------------
+// Source of truth: ../../references/visual-studio-code/src/omni.yml
+
+@BG:        #191622;
+@FG:        #E1E1E6;
+@SELECTION: #41414D;
+@COMMENT:   #5A4B81;
+@CYAN:      #988bc7;
+@GREEN:     #67e480;
+@ORANGE:    #E89E64;
+@PINK:      #FF79C6;
+@PURPLE:    #78D1E1;
+@RED:       #E96379;
+@YELLOW:    #e7de79;
+
+@BGLighter: #252131;
+@BGLight:   #201B2D;
+@BGDark:    #13111B;
+@BGDarker:  #15121E;
+
+// hue-N aliases -----------------------------------
+// Kept so styles/syntax/*.less and styles/syntax-legacy/*.less can reuse
+// one-dark-syntax's scope structure (see references/pulsar/packages/
+// one-dark-syntax) almost verbatim, just recolored to the Omni palette.
+// Mapping follows omni.yml's own tokenColors assignments (see docs/spec.md);
+// a handful of scopes where Omni diverges from a flat hue swap are
+// overridden directly in the files that use them, not here.
+
+@mono-1: @FG;
+@mono-2: @FG;
+@mono-3: @COMMENT;
+
+@hue-1:   @CYAN;   // types / support / language regexp
+@hue-2:   @GREEN;  // functions / methods
+@hue-3:   @PINK;   // keywords / operators
+@hue-4:   @YELLOW; // strings
+@hue-5:   @PINK;   // variables / tags
+@hue-5-2: @RED;     // secondary accent (regexp edge cases)
+@hue-6:   @PURPLE; // constants
+@hue-6-2: @CYAN;   // class / type names
+
+@syntax-accent: @PINK;
