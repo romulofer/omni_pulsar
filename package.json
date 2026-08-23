@@ -3,6 +3,7 @@
   "theme": "syntax",
   "version": "1.1.0",
   "description": "Omni syntax theme (Rocketseat), ported to Pulsar",
+  "author": "Rômulo Fernandes Evangelista (https://github.com/romulofer)",
   "keywords": [
     "dark",
     "purple",
